@@ -45,6 +45,7 @@ You can simply create an `index.html` and include `loglive` there:
     // And that's it!
   </script>
 </body>
+</html>
 ```
 
 Then you can start to write a `CHANGELOG.md`, by default LogLive will read from `http://your-website/CHANGELOG.md`, however you can use a custom path:
