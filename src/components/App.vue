@@ -77,6 +77,9 @@ body
 
 *
   box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  text-rendering: optimizeLegibility
+  -moz-osx-font-smoothing: grayscale
 
 .container
   max-width: 560px
