@@ -4,6 +4,12 @@ website: https://github.com/egoist/loglive
 
 # LogLive
 
+## 0.1.1 (2017-07-27)
+
+### Fix
+
+Tweak style of loading text, **smaller**!.
+
 ## 0.1.0 (2017-07-27)
 
 ### New

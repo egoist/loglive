@@ -104,7 +104,8 @@ body
 
 <style lang="stylus">
 .loglive-loading
-  font-size: 4rem
+  font-size: 2rem
+  font-weight: 300
   color: #b1b0b0
   position: fixed
   top: 0
@@ -114,7 +115,7 @@ body
   display: flex
   align-items: center
   justify-content: center
-  animation: 2s infinite fade-in-out
+  animation: 1s infinite fade-in-out
 
 @keyframes fade-in-out
   from
