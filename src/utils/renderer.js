@@ -29,7 +29,7 @@ const randomColor = () => {
   return COLORS[Math.floor(Math.random() * 20)]
 }
 
-const TITLE_REGEX = /^([^(]+)(?:\(([^.]+)\))?$/
+const TITLE_REGEX = /^([^(]+)(?:\(([^)]+)\))?$/
 
 const matchChangelogTitle = title => {
   return TITLE_REGEX.exec(title)
