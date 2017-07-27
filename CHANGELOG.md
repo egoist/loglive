@@ -4,6 +4,38 @@ website: https://github.com/egoist/loglive
 
 # LogLive
 
+## 0.2.0 (2017-07-27T08:13:59.814Z)
+
+### New
+
+Now you can use it as a Vue component too!
+
+```vue
+<template>
+  <div id="app">
+    <log-live 
+      changelog="changelog">
+    </log-live>
+  </div>
+</template>
+
+<script>
+import { LogLive } from 'loglive'
+
+export default {
+  components: {
+    LogLive
+  },
+
+  data() {
+    return {
+      changelog: '/changelog.md'
+    }
+  }
+}
+</script>
+```
+
 ## 0.1.3 (2017-07-27T06:51:01.943Z)
 
 ### Fix
