@@ -4,7 +4,7 @@ website: https://github.com/egoist/loglive
 
 # LogLive
 
-## 0.1.3 (2017-07-27 06:51:00)
+## 0.1.3 (2017-07-27T06:51:01.943Z)
 
 ### Fix
 
