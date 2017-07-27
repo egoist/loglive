@@ -77,8 +77,18 @@ body
   pre
     border: 1px solid rgb(234, 234, 234)
     border-radius: 0
+    background-color: transparent
+
+  code
     color: #bd10e0
-    background: transparent
+    font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif
+    font-size: 0.9em
+    white-space: pre-wrap
+    background-color: transparent
+    &:before
+      content: '`'
+    &:after
+      content: '`'
 </style>
 
 <style lang="stylus">

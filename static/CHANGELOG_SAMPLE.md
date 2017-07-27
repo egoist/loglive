@@ -17,6 +17,7 @@ This is for testing random color for title
 
 ### how?
 
+some `code`
 
 ```js
 function foo() {
