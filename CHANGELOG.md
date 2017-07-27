@@ -4,6 +4,12 @@ website: https://github.com/egoist/loglive
 
 # LogLive
 
+## 0.0.3 (2017-07-27)
+
+### Fix
+
+Tweak style for `<code>` span, simply wrap it with backticks!
+
 ## 0.0.2 (2017-07-27)
 
 ### Fix
