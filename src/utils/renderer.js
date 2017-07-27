@@ -29,20 +29,13 @@ const randomColor = () => {
   return COLORS[Math.floor(Math.random() * 20)]
 }
 
-const TITLE_REGEX = /^([^\(]+)(?:\(([^.]+)\))?$/
-
-const isChangelogTitle = title => {
-  return TITLE_REGEX.test(title)
-}
+const TITLE_REGEX = /^([^(]+)(?:\(([^.]+)\))?$/
 
 const matchChangelogTitle = title => {
   return TITLE_REGEX.exec(title)
 }
 
-export default ({
-  site,
-  colors
-} = {}) => {
+export default ({ site, colors } = {}) => {
   const renderer = new marked.Renderer()
 
   const originalHeading = renderer.heading.bind(renderer)
@@ -58,14 +51,23 @@ export default ({
       if (matched) {
         let [, title, date = ''] = matched
         title = title.trim()
-        return `<div class="loglive-logtitle">${originalHeading(title, level, title)}<time class="loglive-date" datetime="${date && parseDate(date)}">${date && timeago(date)}</time></div>`
+        return `<div class="loglive-logtitle">${originalHeading(
+          title,
+          level,
+          title
+        )}<time class="loglive-date" datetime="${date &&
+          parseDate(date)}">${date && timeago(date)}</time></div>`
       }
     }
 
     if (level === 3) {
       let res = '<div class="loglive-sep"></div>'
       const color = colors[raw.trim()] || randomColor()
-      res += originalHeading(text, level, raw).replace(/^<h3/, `<h3 style="background-color: ${color}" class="loglive-h3"`) + '<div class="clearfix"></div>'
+      res +=
+        originalHeading(text, level, raw).replace(
+          /^<h3/,
+          `<h3 style="background-color: ${color}" class="loglive-h3"`
+        ) + '<div class="clearfix"></div>'
       return res
     }
 

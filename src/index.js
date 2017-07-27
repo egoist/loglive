@@ -1,1 +1,1 @@
- module.exports = require('./LogLive').default
+module.exports = require('./LogLive').default

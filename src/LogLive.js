@@ -1,13 +1,10 @@
+// eslint-disable-next-line import/no-unassigned-import
 import './polyfills'
 import Vue from 'vue'
 import App from './components/App.vue'
 
 export default class LogLive {
-  constructor({
-    el = '#app',
-    changelog = '/CHANGELOG.md',
-    colors
-  } = {}) {
+  constructor({ el = '#app', changelog = '/CHANGELOG.md', colors } = {}) {
     colors = {
       Fix: '#b26cee',
       New: '#3778ff',
@@ -18,10 +15,7 @@ export default class LogLive {
     return new Vue({
       el,
       render() {
-        return <App
-          colors={colors}
-          changelog={changelog}
-        />
+        return <App colors={colors} changelog={changelog} />
       }
     })
   }

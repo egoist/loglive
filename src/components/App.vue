@@ -77,7 +77,6 @@ body {
 }
 </style>
 
-
 <style lang="stylus">
 .loglive-header
   border-bottom: 1px solid #f3f3f3
