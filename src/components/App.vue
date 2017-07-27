@@ -8,9 +8,14 @@
         <div class="loglive-website" v-if="site.website"><a :href="site.website">{{ getDomain(site.website) }}</a></div>
       </div>
     </header>
-    <div class="loglive-body">
-      <div class="markdown-body container" v-html="html"></div>
+    <div class="loglive-loading" v-else>
+      Loading...
     </div>
+    <transition name="fade">
+      <div class="loglive-body" v-if="html">
+        <div class="markdown-body container" v-html="html"></div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -89,9 +94,38 @@ body
       content: '`'
     &:after
       content: '`'
+
+.fade-enter-active, .fade-leave-active
+  transition: opacity .5s
+
+.fade-enter, .fade-leave-to
+  opacity: 0
 </style>
 
 <style lang="stylus">
+.loglive-loading
+  font-size: 4rem
+  color: #b1b0b0
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  align-items: center
+  justify-content: center
+  animation: 2s infinite fade-in-out
+
+@keyframes fade-in-out
+  from
+    opacity: 1
+
+  50%
+    opacity: .5
+
+  to
+    opacity: 1
+
 .loglive-header
   border-bottom: 1px solid #f3f3f3
   padding: 1rem 0

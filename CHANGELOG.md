@@ -4,6 +4,13 @@ website: https://github.com/egoist/loglive
 
 # LogLive
 
+## 0.1.0 (2017-07-27)
+
+### New
+
+- Add transition effect to changelog body
+- Add loading indicator
+
 ## 0.0.3 (2017-07-27)
 
 ### Fix
