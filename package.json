@@ -1,6 +1,6 @@
 {
   "name": "loglive",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Render changelog.md on the fly.",
   "repository": {
     "url": "egoist/loglive",
@@ -44,7 +44,10 @@
     "xo": "^0.18.0"
   },
   "xo": {
-    "extends": ["rem", "plugin:vue/recommended"],
+    "extends": [
+      "rem",
+      "plugin:vue/recommended"
+    ],
     "envs": [
       "browser"
     ],
