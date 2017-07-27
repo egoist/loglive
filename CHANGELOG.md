@@ -4,6 +4,12 @@ website: https://github.com/egoist/loglive
 
 # LogLive
 
+## 0.1.3 (2017-07-27 06:51:00)
+
+### Fix
+
+Fix regular expression for matching date in changelog title.
+
 ## 0.1.2 (2017-07-27T06:42:01.943Z)
 
 ### Fix
