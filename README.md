@@ -1,8 +1,12 @@
-# loglive
+# LogLive
+
+This is inspired by [headwayapp.co](https://headwayapp.co) but as a single script you can add to an HTML file.
+
+<p align="center">
+<img src="https://i.loli.net/2017/07/27/597995184bb02.png" width="800">
+</p>
 
 [![NPM version](https://img.shields.io/npm/v/loglive.svg?style=flat)](https://npmjs.com/package/loglive) [![NPM downloads](https://img.shields.io/npm/dm/loglive.svg?style=flat)](https://npmjs.com/package/loglive) [![CircleCI](https://circleci.com/gh/egoist/loglive/tree/master.svg?style=shield)](https://circleci.com/gh/egoist/loglive/tree/master)  [![donate](https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&style=flat)](https://github.com/egoist/donate)
-
-> This is inspired by [headwayapp.co](https://headwayapp.co) but as a single script you can add to an HTML file.
 
 ## Install
 
