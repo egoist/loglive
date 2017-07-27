@@ -110,6 +110,16 @@ Change type is an `h3` heading which describes the type of the change, eg: `Fix`
 
 By default we have pre-defined colors for specific types which include: `Fix` `Breaking` `New`, other types will get a random color.
 
+You can also set color for custom change type:
+
+```js
+new LogLive({
+  colors: {
+    'Bug fixes': '#342343'
+  }
+})
+```
+
 ## Front Matters
 
 ### website
