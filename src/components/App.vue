@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="loglive-app">
     <header class="loglive-header" v-if="site">
       <div class="container">
         <h1 class="loglive-title">
@@ -25,6 +25,8 @@ import fm from '../utils/front-matter'
 import markdown from '../utils/markdown'
 
 export default {
+  name: 'LogLive',
+
   props: ['changelog', 'colors'],
 
   data() {
@@ -41,14 +43,20 @@ export default {
 
   methods: {
     fetchFile() {
-      fetch(this.changelog)
+      const changelog = this.changelog || '/CHANGELOG.md'
+      fetch(changelog)
         .then(res => res.text())
         .then(res => {
           const { body, attributes } = fm(res)
           this.site = attributes
           this.html = markdown(body, {
             site: this.site,
-            colors: this.colors
+            colors: {
+              Fix: '#b26cee',
+              New: '#3778ff',
+              Breaking: '#ff9800',
+              ...(this.colors || {})
+            }
           })
         })
     },

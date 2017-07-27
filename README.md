@@ -61,6 +61,35 @@ new LogLive({
 })
 ```
 
+<details><summary>You can also use it as a Vue component</summary>
+
+```vue
+<template>
+  <div id="app">
+    <log-live 
+      changelog="changelog">
+    </log-live>
+  </div>
+</template>
+
+<script>
+import { LogLive } from 'loglive'
+
+export default {
+  components: {
+    LogLive
+  },
+
+  data() {
+    return {
+      changelog: '/changelog.md'
+    }
+  }
+}
+</script>
+```
+</details>
+
 ## Changelog Format
 
 ### Example
