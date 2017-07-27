@@ -4,6 +4,12 @@ website: https://github.com/egoist/loglive
 
 # LogLive
 
+## 0.1.2 (2017-07-27)
+
+### Fix
+
+Remove debug log, thanks to [@FuryBean](https://github.com/furybean)
+
 ## 0.1.1 (2017-07-27)
 
 ### Fix
