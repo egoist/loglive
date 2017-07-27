@@ -57,24 +57,28 @@ export default {
 
 <style src="github-markdown-css/github-markdown.css"></style>
 
-<style>
-body {
-  margin: 0;
-  font: 14px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-}
+<style lang="stylus">
+body
+  margin: 0
+  font: 14px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif
 
-* {
-  box-sizing: border-box;
-}
+*
+  box-sizing: border-box
 
-.container {
-  max-width: 560px;
-  margin: auto;
-}
+.container
+  max-width: 560px
+  margin: auto
+  padding: 0 10px
 
-.clearfix {
-  clear: both;
-}
+.clearfix
+  clear: both
+
+.markdown-body
+  pre
+    border: 1px solid rgb(234, 234, 234)
+    border-radius: 0
+    color: #bd10e0
+    background: transparent
 </style>
 
 <style lang="stylus">
@@ -100,7 +104,7 @@ body {
         text-decoration: underline
 
 .loglive-body
-  padding: 3rem 1rem 5rem 1.25rem
+  padding: 3rem 0 5rem 0
   position: relative
   .container
     position: relative
@@ -126,13 +130,11 @@ body {
     position: relative
     &:not(:first-child)
       border-top: 1px solid #f3f3f3
-      padding-top: @margin-top
+      padding-top: @margin-top - 10px
+      .loglive-date
+        margin-top: @margin-top - 10px + 24px + 2px
     .loglive-date
       font-size: 13px
-      position: absolute
-      left: -130px
-      top: 50%
-      margin-top: 26px
       color: rgba(71,82,93,.4)
 
   .loglive-h3
@@ -145,4 +147,11 @@ body {
     padding: 3px 12px
     font-size: 12px
     border-radius: 33px
+
+@media screen and (min-width: 768px)
+  .loglive-logtitle
+    .loglive-date
+      position: absolute
+      left: -130px
+      top: 2px
 </style>
