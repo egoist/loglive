@@ -1,6 +1,6 @@
 {
   "name": "loglive",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Render changelog.md on the fly.",
   "repository": {
     "url": "egoist/loglive",
