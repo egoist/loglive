@@ -4,6 +4,14 @@ website: https://github.com/egoist/loglive
 
 # LogLive
 
+## 0.2.2 (2017-07-27T11:18:37.012Z)
+
+### New
+
+- Optimize text rendering
+- Tweak text color, use lighter color
+- Update [marked3](https://github.com/egoist/marked3) to make links open in new tab
+
 ## 0.2.0 (2017-07-27T08:13:59.814Z)
 
 ### New
