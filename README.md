@@ -100,7 +100,7 @@ Sometime you just want to use semantic version as the changelog title:
 
 ### Change Type
 
-Change type if an `h3` heading which describes the type of the change, eg: `Fix`. And it shows up like:
+Change type is an `h3` heading which describes the type of the change, eg: `Fix`. And it shows up like:
 
 <img src="https://i.loli.net/2017/07/27/59797da5a89df.png" alt="change type" width="60">
 
