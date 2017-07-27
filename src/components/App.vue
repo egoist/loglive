@@ -71,9 +71,12 @@ export default {
 <style src="github-markdown-css/github-markdown.css"></style>
 
 <style lang="stylus">
+$color = #47525d
+
 body
   margin: 0
   font: 14px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif
+  color: $color
 
 *
   box-sizing: border-box
@@ -90,6 +93,7 @@ body
   clear: both
 
 .markdown-body
+  color: $color
   a
     color: #1C90F3
 
@@ -114,9 +118,7 @@ body
 
 .fade-enter, .fade-leave-to
   opacity: 0
-</style>
 
-<style lang="stylus">
 .loglive-loading
   font-size: 2rem
   font-weight: 300
@@ -149,7 +151,7 @@ body
     font-size: 1.125rem
     margin: 0
     a
-      color: #333
+      color: $color
       text-decoration: none
       &:hover
         text-decoration: underline
