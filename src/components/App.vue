@@ -87,6 +87,9 @@ body
   clear: both
 
 .markdown-body
+  a
+    color: #1C90F3
+
   pre
     border: 1px solid rgb(234, 234, 234)
     border-radius: 0
