@@ -1,0 +1,57 @@
+{
+  "name": "loglive",
+  "version": "0.0.0",
+  "description": "Render changelog.md on the fly.",
+  "repository": {
+    "url": "egoist/loglive",
+    "type": "git"
+  },
+  "main": "dist/cjs/loglive.js",
+  "style": "dist/loglive.css",
+  "unpkg": "dist/loglive.js",
+  "cdn": "dist/loglive.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "npm run lint && echo 'no tests!'",
+    "lint": "xo",
+    "example": "poi --config config/example.js",
+    "build": "npm run build:cjs && npm run build:umd && rm -rf dist/cjs/*.css*",
+    "build:cjs": "poi build --config config/shared.js --no-minimize",
+    "build:umd": "poi build --config config/shared.js --dist dist --module-name LogLive --format umd"
+  },
+  "author": "egoist <0x142857@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^1.28.5",
+    "github-markdown-css": "^2.8.0",
+    "marked3": "^0.4.0",
+    "nano-assign": "^1.0.0",
+    "promise-polyfill": "^6.0.2",
+    "time-ago": "^0.1.0",
+    "unfetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "bili": "^0.17.0",
+    "eslint-config-rem": "^3.0.0",
+    "poi": "^9.1.6",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.1",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "extends": "rem"
+  },
+  "babel": {
+    "presets": [
+      [
+        "vue-app",
+        {
+          "useBuiltIns": true
+        }
+      ]
+    ]
+  }
+}
