@@ -33,7 +33,7 @@
   "dependencies": {
     "date-fns": "^1.28.5",
     "github-markdown-css": "^2.8.0",
-    "marked3": "^0.4.0",
+    "marked3": "^0.5.0",
     "nano-assign": "^1.0.0",
     "promise-polyfill": "^6.0.2",
     "unfetch": "^3.0.0",

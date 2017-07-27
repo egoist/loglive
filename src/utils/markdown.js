@@ -3,6 +3,7 @@ import createRender from './renderer'
 
 export default (text, opts) => {
   return marked(text, {
-    renderer: createRender(opts)
+    renderer: createRender(opts),
+    linksInNewTab: true
   })
 }
