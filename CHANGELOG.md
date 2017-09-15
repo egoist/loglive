@@ -22,7 +22,7 @@ Now you can use it as a Vue component too!
 <template>
   <div id="app">
     <log-live 
-      changelog="changelog">
+      :changelog="changelog">
     </log-live>
   </div>
 </template>
