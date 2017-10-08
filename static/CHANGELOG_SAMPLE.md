@@ -4,7 +4,7 @@ website: https://github.com/egoist/loglive
 
 # LogLive
 
-## Add typescript support (2017-07-27T06:48:01.943Z)
+## Add typescript support (2017-07-27)
 
 ### New
 
