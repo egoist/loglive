@@ -4,6 +4,12 @@ website: https://github.com/egoist/loglive
 
 # LogLive
 
+## 0.2.3 (2019-02-20T05:33:00.150Z)
+
+### New
+
+- Add `ago` suffix to changelog dates
+
 ## 0.2.2 (2017-07-27T11:18:37.012Z)
 
 ### New
