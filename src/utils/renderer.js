@@ -56,7 +56,7 @@ export default ({ site, colors } = {}) => {
           level,
           title
         )}<time class="loglive-date" datetime="${date &&
-          parseDate(date)}">${date && timeago(date)}</time></div>`
+          parseDate(date)}">${date && timeago(date, { addSuffix: true })}</time></div>`
       }
     }
 
